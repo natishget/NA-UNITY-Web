@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -44,20 +45,20 @@ const Hero = () => {
         {/* CTA Buttons */}
         <div className="flex space-x-4">
           {/* Primary Button: "Ship a load today" (White background, black text) */}
-          <a
+          <Link
             href="#"
             className="bg-white text-black font-semibold py-3 px-6 rounded hover:bg-gray-200 transition duration-300 shadow-xl"
           >
             Request a Quote
-          </a>
+          </Link>
 
           {/* Secondary Button: "Haul with us" (Text-only with border) */}
-          <a
-            href="#"
+          <Link
+            href="/contact"
             className="text-white font-semibold py-3 px-6 rounded border border-white hover:bg-white hover:text-black transition duration-300"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
     </section>

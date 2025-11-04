@@ -1,6 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import { Mail, Phone } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  AtSign,
+  Linkedin,
+  Facebook,
+  Instagram,
+} from "lucide-react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -16,7 +24,7 @@ const Footer = () => {
           />
           <h1 className="font-extrabold text-3xl">NA UNITY</h1>
         </div>
-        <div className="flex flex-col md:flex-row gap-40 mt-10 mb-5 text-2xl">
+        <div className="flex flex-col md:flex-row md:gap-10 lg:gap-30 gap-20 mt-10 mb-5 text-2xl">
           <div>
             <h1 className="font-bold ">Solutions</h1>
             <ul className="text-gray-300 flex flex-col gap-4 mt-3">
@@ -30,10 +38,21 @@ const Footer = () => {
           <div>
             <h1 className="font-bold">Company</h1>
             <ul className="text-gray-300 flex flex-col gap-2 mt-3">
-              <li>Home</li>
-              <li>About US</li>
-              <li>Service</li>
-              <li>Contact Us</li>
+              <li>
+                <Link href="/">Home</Link>
+              </li>
+              <li>
+                <Link href="/about">About US</Link>
+              </li>
+              <li>
+                <Link href="/services">Service</Link>
+              </li>
+              <li>
+                <Link href="/industries">Industries</Link>
+              </li>
+              <li>
+                <Link href="/contact">Contact Us</Link>
+              </li>
             </ul>
           </div>
 
@@ -51,11 +70,19 @@ const Footer = () => {
         </div>
 
         <section>
-          <div>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+          <div className="flex gap-5 text-3xl">
+            <Link href="">
+              <Facebook />
+            </Link>
+            <Link href="">
+              <AtSign />
+            </Link>
+            <Link href="">
+              <Linkedin />
+            </Link>
+            <Link href="">
+              <Instagram />
+            </Link>
           </div>
         </section>
 

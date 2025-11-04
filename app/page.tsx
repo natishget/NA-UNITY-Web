@@ -1,3 +1,4 @@
+import { BadgeCheck, Container, Warehouse } from "lucide-react";
 import Hero from "../component/Hero";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,7 +16,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row gap-4 md:gap-0 justify-between mt-16">
               <div className="bg-black text-white md:w-[48%] pb-8">
                 <Image
-                  src="/containers.jpg"
+                  src="/containers2.jpg"
                   alt="Shippers image"
                   width={650}
                   height={200}
@@ -88,20 +89,20 @@ export default function Home() {
             {/* CTA Buttons */}
             <div className="flex space-x-4">
               {/* Primary Button: "Ship a load today" (White background, black text) */}
-              <a
+              <Link
                 href="#"
                 className="bg-black text-white font-semibold py-3 px-6 rounded hover:bg-gray-700 transition duration-300 shadow-xl"
               >
                 Get instant quote
-              </a>
+              </Link>
 
               {/* Secondary Button: "Haul with us" (Text-only with border) */}
-              <a
-                href="#"
+              <Link
+                href="/contact"
                 className="bg-white text-black font-semibold py-3 px-6 hover:bg-gray-200 rounded border border-white  transition duration-300"
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -114,11 +115,11 @@ export default function Home() {
               alt="About us image"
               width={600}
               height={400}
-              className="object-cover"
+              className="object-cover md:w-[45%] "
             />
-            <div className="md:w-[40%] flex flex-col justify-center md:p-10 p-4">
+            <div className="md:w-[45%] flex flex-col justify-center md:p-10 p-4">
               <h2 className="text-5xl font-bold mb-4">Who We are?</h2>
-              <p className="text-xl text-gray-600 mb-8 ">
+              <p className="text-2xl text-gray-600 mb-8 ">
                 NA Unity Logistics & Sourcing is a trusted global partner
                 connecting China and Ethiopia through efficient logistics and
                 reliable sourcing solutions. We specialize in air cargo, ocean
@@ -136,16 +137,30 @@ export default function Home() {
           <div className="md:w-[80%] mx-auto flex flex-col md:flex-row gap-10 justify-evenly mb-22">
             <div className="md:w-[40%] flex flex-col justify-center md:p-10 p-4">
               <h2 className="text-5xl font-bold mb-4">Industries we serve</h2>
-              <p className="text-xl text-gray-600 mb-8 pl-5">
-                Industrial Machinery & Equipment <br />
-                Electrical & Electronic Goods <br />
-                Construction Materials & Tools <br />
-                Vehicles & EV Trucks
-                <br />
-                Chemical & Pharmaceutical Machinery <br /> Apparel & Textiles{" "}
-                <br />
-                Household, Furniture & General Goods
-              </p>
+              <ul className="text-2xl text-gray-600 mb-8  space-y-5 ml-5">
+                <li>
+                  <span>⚙️</span> Industrial Machinery & Equipment
+                </li>
+                <li>
+                  <span>📱</span> Electrical & Electronic Goods
+                </li>
+                <li>
+                  <span>🏗️</span> Construction Materials & Tools
+                </li>
+                <li>
+                  <span>🚗</span> Automotive & Spare Parts
+                </li>
+                <li>
+                  <span>⚗️</span> Chemical & Pharmaceutical Machinery
+                </li>
+                <li>
+                  <span>👔</span> Apparel & Textiles
+                </li>
+                <li>
+                  <span>🏠</span> Household, Furniture & General Goods
+                </li>
+              </ul>
+
               <Link
                 href="/industries"
                 className="text-white px-3 py-2 bg-black w-fit rounded hover:bg-gray-600"
@@ -158,7 +173,7 @@ export default function Home() {
               alt="About us image"
               width={600}
               height={400}
-              className="object-cover"
+              className="object-cover md:w-[45%] "
             />
           </div>
           <div className="md:w-[80%] mx-auto flex flex-col md:flex-row gap-10 justify-evenly mb-22">
@@ -167,18 +182,38 @@ export default function Home() {
               alt="About us image"
               width={600}
               height={400}
-              className="object-cover"
+              className="object-cover md:w-[45%] "
             />
             <div className="md:w-[40%] flex flex-col justify-center p-10">
               <h2 className="text-5xl font-bold mb-4">Services we offer</h2>
-              <p className="text-xl text-gray-600 mb-8 ">
-                Sourcing & Supplier Verification <br />
-                Price Negotiation & Purchasing <br /> Quality Control &
-                Pre-Shipment Inspections <br /> Warehousing & Consolidation{" "}
-                <br /> Logistics & Delivery Management
-                <br /> Payment & Transaction Support <br />
-                Customs & Mediation
-              </p>
+              <ul className="text-2xl text-gray-600 mb-8  space-y-5 ml-5">
+                <li className="flex gap-2">
+                  <Container className="text-blue-600" /> Sourcing & Supplier
+                  Verification
+                </li>
+                <li>
+                  <span>💰</span> Price Negotiation & Purchasing
+                </li>
+                <li className="flex gap-2">
+                  <BadgeCheck className="text-green-600" /> Quality Control &
+                  Pre-Shipment Inspections
+                </li>
+                <li className="flex gap-2">
+                  <Warehouse className="text-red-500" /> Warehousing &
+                  Consolidation
+                </li>
+                <li>
+                  <span>🚚</span> Logistics & Delivery Management
+                </li>
+                <li>
+                  <span>💳</span> Payment & Transaction Support
+                </li>
+                <li>
+                  {" "}
+                  <span>📋</span> Customs & Mediation
+                </li>
+              </ul>
+
               <Link
                 href="/services"
                 className="text-white px-3 py-2 bg-black w-fit rounded hover:bg-gray-600"
@@ -226,12 +261,12 @@ export default function Home() {
             {/* CTA Buttons */}
             <div className="flex space-x-4">
               {/* Primary Button: "Ship a load today" (White background, black text) */}
-              <a
-                href="#"
+              <Link
+                href="/about"
                 className="bg-black text-white font-semibold py-3 px-6 rounded hover:bg-gray-700 transition duration-300 shadow-xl"
               >
                 Find out more
-              </a>
+              </Link>
 
               {/* Secondary Button: "Haul with us" (Text-only with border) */}
             </div>

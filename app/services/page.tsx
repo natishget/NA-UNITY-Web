@@ -65,7 +65,7 @@ export default function Page() {
               alt="Sourcing Factory"
               width={800}
               height={500}
-              className=""
+              className="md:w-[45%]"
             />
           </div>
         </section>
@@ -77,7 +77,7 @@ export default function Page() {
               alt="Sourcing Factory"
               width={800}
               height={500}
-              className=""
+              className="md:w-[45%]"
             />
             <div className="md:w-[40%]">
               <h2 className="text-5xl font-bold mb-6 text-blue-600">
@@ -144,7 +144,7 @@ export default function Page() {
               alt="Sourcing Factory"
               width={800}
               height={500}
-              className=""
+              className="md:w-[45%]"
             />
           </div>
         </section>
@@ -157,7 +157,7 @@ export default function Page() {
               alt="Sourcing Factory"
               width={800}
               height={500}
-              className=""
+              className="md:w-[45%]"
             />
             <div className="md:w-[40%]">
               <h2 className="text-5xl font-bold mb-6 text-blue-600">
@@ -224,7 +224,7 @@ export default function Page() {
               alt="Sourcing Factory"
               width={800}
               height={500}
-              className=""
+              className="md:w-[45%]"
             />
           </div>
         </section>
@@ -237,7 +237,7 @@ export default function Page() {
               alt="Sourcing Factory"
               width={800}
               height={500}
-              className=""
+              className="md:w-[45%]"
             />
             <div className="md:w-[40%]">
               <h2 className="text-5xl font-bold mb-6 text-blue-600">
@@ -304,11 +304,12 @@ export default function Page() {
               alt="Sourcing Factory"
               width={800}
               height={500}
-              className=""
+              className="md:w-[45%]"
             />
           </div>
         </section>
 
+        {/* CTA Section */}
         <section className="relative h-[600px] md:h-[750px]  overflow-hidden bg-gray-900 flex items-center justify-center">
           {/* 2. Background Graphic Container (Absolute and fills the section) */}
           <div className="absolute inset-0 z-0">
