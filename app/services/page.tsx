@@ -369,7 +369,7 @@ export default function Page() {
             <div className="flex space-x-4">
               {/* Primary Button: "Ship a load today" (White background, black text) */}
               <a
-                href="#"
+                href="/contact"
                 className=" border-2 border-white text-white font-semibold py-3 px-6 rounded hover:bg-white hover:text-black transition duration-300 shadow-xl"
               >
                 Contact Us

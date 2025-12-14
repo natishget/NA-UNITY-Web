@@ -89,12 +89,6 @@ export default function Home() {
             {/* CTA Buttons */}
             <div className="flex space-x-4">
               {/* Primary Button: "Ship a load today" (White background, black text) */}
-              <Link
-                href="#"
-                className="bg-black text-white font-semibold py-3 px-6 rounded hover:bg-gray-700 transition duration-300 shadow-xl"
-              >
-                Get instant quote
-              </Link>
 
               {/* Secondary Button: "Haul with us" (Text-only with border) */}
               <Link
@@ -122,9 +116,9 @@ export default function Home() {
               <p className="text-2xl text-gray-600 mb-8 ">
                 NA Unity Logistics & Sourcing is a trusted global partner
                 connecting China and Ethiopia through efficient logistics and
-                reliable sourcing solutions. We specialize in air cargo, ocean
-                freight, and truck transport, ensuring your goods move safely,
-                quickly, and affordably across borders.
+                reliable sourcing solutions. We specialize in air cargo, and
+                ocean freight, ensuring your goods move safely, quickly, and
+                affordably across borders.
               </p>
               <Link
                 href="/about"
@@ -254,7 +248,7 @@ export default function Home() {
           {/* 3. Content Overlay (Text and Buttons) */}
           <div className="relative w-[80%] h-full flex flex-col justify-end gap-10 mb-44 z-10 text-white  pt-4 sm:pt-10 lg:pt-22">
             {/* Title */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-34">
               The drive begins here
             </h1>
 
@@ -333,13 +327,12 @@ export default function Home() {
             {/* CTA Buttons */}
             <div className="flex space-x-4">
               {/* Primary Button: "Ship a load today" (White background, black text) */}
-              <a
-                href="#"
+              <Link
+                href="/contact"
                 className=" border-2 border-white text-white font-semibold py-3 px-6 rounded hover:bg-white hover:text-black transition duration-300 shadow-xl"
               >
                 Contact Us
-              </a>
-
+              </Link>
               {/* Secondary Button: "Haul with us" (Text-only with border) */}
             </div>
           </div>

@@ -7,6 +7,8 @@ import {
   Linkedin,
   Facebook,
   Instagram,
+  CircleDotDashed,
+  Send,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -28,10 +30,21 @@ const Footer = () => {
           <div>
             <h1 className="font-bold ">Solutions</h1>
             <ul className="text-gray-300 flex flex-col gap-4 mt-3">
-              <li>Verified suppliers with audits & inspections</li>
-              <li>Transparent quotes with no hidden fees</li>
-              <li>Bilingual mediation (Amharic/English + Chinese) </li>
-              <li>End-to-end logistics from sourcing to delivery</li>
+              <li className="flex gap-2 items-center">
+                {" "}
+                <CircleDotDashed /> Verified suppliers with audits & inspections
+              </li>
+              <li className="flex gap-2 items-center">
+                <CircleDotDashed /> Transparent quotes with no hidden fees
+              </li>
+              <li className="flex gap-2 items-center">
+                <CircleDotDashed /> Bilingual mediation (Amharic/English +
+                Chinese)
+              </li>
+              <li className="flex gap-2 items-center">
+                <CircleDotDashed />
+                End-to-end logistics from sourcing to delivery
+              </li>
             </ul>
           </div>
 
@@ -57,13 +70,20 @@ const Footer = () => {
           </div>
 
           <div>
-            <h1 className="font-bold">Resource</h1>
+            <h1 className="font-bold">Contacts</h1>
             <ul className="text-gray-300 flex flex-col gap-2 mt-3">
-              <li className="flex items-center gap-2">
-                <Mail />: info@naunity.com
+              <li>
+                <a
+                  href="mailto:info@naunity.com"
+                  className="flex items-center gap-2"
+                >
+                  <Mail />: info@naunity.com
+                </a>
               </li>
               <li className="flex items-center gap-2">
-                <Phone />: +251 911 123 456
+                <a href="tel:+251911123456" className="flex items-center gap-2">
+                  <Phone />: +251 911 123 456
+                </a>
               </li>
             </ul>
           </div>
@@ -71,18 +91,21 @@ const Footer = () => {
 
         <section>
           <div className="flex gap-5 text-3xl">
-            <Link href="">
+            <a href="https://web.facebook.com/profile.php?id=61581694134430">
               <Facebook />
-            </Link>
-            <Link href="">
+            </a>
+            <a href="https://www.tiktok.com/@na_sourcing?is_from_webapp=1&sender_device=pc">
               <AtSign />
-            </Link>
-            <Link href="">
+            </a>
+            <a href="https://www.linkedin.com/in/na-unity-trading-165922386/">
               <Linkedin />
-            </Link>
-            <Link href="">
+            </a>
+            <a href="https://www.instagram.com/na_unitytrading/?hl=en">
               <Instagram />
-            </Link>
+            </a>
+            <a href="https://t.me/NA_Sourcing">
+              <Send />
+            </a>
           </div>
         </section>
 

@@ -34,22 +34,38 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
-    setTimeout(() => {
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        company: "",
-        subject: "",
-        message: "",
-      });
-      setSubmitted(false);
-    }, 3000);
+
+    try {
+      const myMessage = `service request: %0A - Full Name: ${formData.name}%0A - Email: ${formData.email}%0A - Phone: ${formData.phone}%0A - Company Name: ${formData.company}%0A - Subject: ${formData.subject}%0A - Message: ${formData.message}%0A%0A%0A Powered By Think HUB ET Innovations!!`;
+
+      const token = "8407563766:AAE9bLqKL8iLQ1e7R4z7DnAqWMORBI3l9cI";
+      const chat_id = -4972079844;
+      const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${myMessage}&parse_mode=html`;
+
+      let api = new XMLHttpRequest();
+      api.open("GET", url, true);
+      api.send();
+
+      setSubmitted(true);
+
+      // Reset form after 3 seconds
+      setTimeout(() => {
+        setSubmitted(false);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          company: "",
+          subject: "",
+          message: "",
+        });
+      }, 3000);
+    } catch (error) {
+      alert("Message failed to send. Please try again.");
+      console.error(error);
+    }
   };
 
   return (
@@ -193,7 +209,7 @@ export default function Contact() {
                   </p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <form onSubmit={handleSubmit} className="space-y-4 text-black">
                   <div>
                     <label
                       htmlFor="name"
@@ -281,7 +297,7 @@ export default function Contact() {
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-2 border border-[#cccccc] rounded focus:outline-none focus:border-[#0000FF] focus:ring-2 focus:ring-[#0000FF] focus:ring-opacity-20"
+                      className="w-full px-4 py-2 border border-[#cccccc] rounded focus:outline-none focus:border-[#0000FF] focus:ring-2 focus:ring-[#0000FF] focus:ring-opacity-20 text-black"
                     >
                       <option value="">Select a subject</option>
                       <option value="sourcing">Sourcing Request</option>
@@ -461,19 +477,19 @@ export default function Contact() {
           </h2>
           <div className="flex justify-center gap-6">
             <a
-              href="#"
+              href="https://web.facebook.com/profile.php?id=61581694134430"
               className="w-12 h-12 bg-[#0000FF] text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors text-xl"
             >
               f
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/na-unity-trading-165922386/"
               className="w-12 h-12 bg-[#0000FF] text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors text-xl"
             >
               in
             </a>
             <a
-              href="#"
+              href="https://www.tiktok.com/@na_sourcing?is_from_webapp=1&sender_device=pc"
               className="w-12 h-12 bg-[#0000FF] text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors text-xl"
             >
               @

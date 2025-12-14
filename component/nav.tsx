@@ -10,7 +10,7 @@ const Nav = () => {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/about", label: "Why NA UNITY" },
+    { href: "/about", label: "About" },
     { href: "/services", label: "Services" },
     { href: "/industries", label: "Industries" },
     { href: "/contact", label: "Contact" },

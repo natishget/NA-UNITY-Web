@@ -45,12 +45,12 @@ const Hero = () => {
         {/* CTA Buttons */}
         <div className="flex space-x-4">
           {/* Primary Button: "Ship a load today" (White background, black text) */}
-          <Link
+          {/* <Link
             href="#"
             className="bg-white text-black font-semibold py-3 px-6 rounded hover:bg-gray-200 transition duration-300 shadow-xl"
           >
             Request a Quote
-          </Link>
+          </Link> */}
 
           {/* Secondary Button: "Haul with us" (Text-only with border) */}
           <Link
