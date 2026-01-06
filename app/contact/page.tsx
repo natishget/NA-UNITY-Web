@@ -40,8 +40,8 @@ export default function Contact() {
     try {
       const myMessage = `service request: %0A - Full Name: ${formData.name}%0A - Email: ${formData.email}%0A - Phone: ${formData.phone}%0A - Company Name: ${formData.company}%0A - Subject: ${formData.subject}%0A - Message: ${formData.message}%0A%0A%0A Powered By Think HUB ET Innovations!!`;
 
-      const token = "8407563766:AAE9bLqKL8iLQ1e7R4z7DnAqWMORBI3l9cI";
-      const chat_id = -4972079844;
+      const token = "";
+      const chat_id = "";
       const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${myMessage}&parse_mode=html`;
 
       let api = new XMLHttpRequest();
