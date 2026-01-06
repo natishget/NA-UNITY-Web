@@ -104,12 +104,18 @@ export default function Industries() {
           {/* NOTE: To replicate the exact look, you would use a dark image/graphic.
             If you have a globe image named 'dark-globe.png' in your 'public' folder: */}
 
-          <Image
+          {/* <Image
             src="/cont.jpg"
             alt="Intelligent Logistics Background"
             layout="fill"
             objectFit="cover"
             className="opacity-50" // Adjust opacity as needed
+          /> */}
+
+          <img
+            src="/cont.jpg"
+            alt="Intelligent Logistics Background"
+            className="opacity-50 object-cover w-full h-full" // Adjust opacity as needed
           />
 
           <div className="w-full h-full bg-black opacity-50"></div>
@@ -171,11 +177,17 @@ export default function Industries() {
             >
               {/* Image */}
               <div className="relative h-64 bg-black overflow-hidden">
-                <Image
+                {/* <Image
                   src={industry.image || "/placeholder.svg"}
                   alt={industry.name}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-300"
+                /> */}
+
+                <img
+                  src={industry.image || "/placeholder.svg"}
+                  alt={industry.name}
+                  className="object-cover group-hover:scale-110 transition-transform duration-300 w-full h-full"
                 />
                 <div className="absolute inset-0 bg-[#0000FF] opacity-20 group-hover:opacity-0 transition-opacity duration-300"></div>
               </div>
@@ -300,7 +312,14 @@ export default function Industries() {
           ></div>
         </div>
         <div className="absolute inset-0 z-0 w-[70%] mx-auto md:flex hidden gap-10 h-fit bg-white text-black pr-3">
-          <Image
+          {/* <Image
+            src="/large-cargo.jpg"
+            alt="Intelligent Logistics Background"
+            width={300}
+            height={600}
+          /> */}
+
+          <img
             src="/large-cargo.jpg"
             alt="Intelligent Logistics Background"
             width={300}

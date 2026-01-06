@@ -22,11 +22,16 @@ const Nav = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
             <div className="w-12 h-12 relative">
-              <Image
+              {/* <Image
                 src="/NA-Unity.png"
                 alt="NA UNITY Logo"
                 width={48}
                 height={48}
+                className="object-contain"
+              /> */}
+              <img
+                src="/NA-Unity.png"
+                alt="NA UNITY Logo"
                 className="object-contain"
               />
             </div>

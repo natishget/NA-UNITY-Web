@@ -73,11 +73,17 @@ export default function Contact() {
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-r from-[#0000FF] to-blue-700 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-40">
-          <Image
+          {/* <Image
             src="/hero-contact.jpg"
             alt="Background"
             fill
             className="object-cover"
+          /> */}
+
+          <img
+            src="/hero-contact.jpg"
+            alt="Background"
+            className="object-cover w-full h-full"
           />
         </div>
         <div

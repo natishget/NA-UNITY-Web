@@ -9,12 +9,19 @@ const Hero = () => {
         {/* NOTE: To replicate the exact look, you would use a dark image/graphic.
           If you have a globe image named 'dark-globe.png' in your 'public' folder: */}
 
-        <Image
+        {/* <Image
           src="/dark.jpg"
           alt="Intelligent Logistics Background"
           layout="fill"
           objectFit="cover"
           className="opacity-50" // Adjust opacity as needed
+        /> */}
+        <img
+          src="/dark.jpg"
+          alt="Intelligent Logistics Background"
+          // layout="fill"
+          // objectFit="cover"
+          className="opacity-50 cover object-cover w-full h-full" // Adjust opacity as needed
         />
 
         {/* The following divs are a pure Tailwind/CSS placeholder to mimic the dark, glossy effect: */}

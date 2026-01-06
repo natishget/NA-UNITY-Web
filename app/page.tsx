@@ -15,7 +15,14 @@ export default function Home() {
             </h1>
             <div className="flex flex-col md:flex-row gap-4 md:gap-0 justify-between mt-16">
               <div className="bg-black text-white md:w-[48%] pb-8">
-                <Image
+                {/* <Image
+                  src="/containers2.jpg"
+                  alt="Shippers image"
+                  width={650}
+                  height={200}
+                  className="pb-5"
+                /> */}
+                <img
                   src="/containers2.jpg"
                   alt="Shippers image"
                   width={650}
@@ -32,7 +39,14 @@ export default function Home() {
                 </a>
               </div>
               <div className="bg-black text-white md:w-[48%] pb-8">
-                <Image
+                {/* <Image
+                  src="/plane.jpg"
+                  alt="Carriers image"
+                  width={650}
+                  height={200}
+                  className="pb-5"
+                /> */}
+                <img
                   src="/plane.jpg"
                   alt="Carriers image"
                   width={650}
@@ -59,12 +73,17 @@ export default function Home() {
             {/* NOTE: To replicate the exact look, you would use a dark image/graphic.
                   If you have a globe image named 'dark-globe.png' in your 'public' folder: */}
 
-            <Image
+            {/* <Image
               src="/cargo-ship.png"
               alt="Intelligent Logistics Background"
               layout="fill"
               objectFit="cover"
               className="opacity-100 hover:opacity-100 transition duration-300" // Adjust opacity as needed
+            /> */}
+            <img
+              src="/cargo-ship.png"
+              alt="Intelligent Logistics Background"
+              className="opacity-100 hover:opacity-100 transition duration-300 object-cover w-full h-full" // Adjust opacity as needed
             />
 
             {/* The following divs are a pure Tailwind/CSS placeholder to mimic the dark, glossy effect: */}
@@ -104,7 +123,14 @@ export default function Home() {
         {/* about us */}
         <section className="bg-white text-black py-20 w-full ">
           <div className="w-[80%] mx-auto flex flex-col md:flex-row gap-10 justify-evenly mb-22">
-            <Image
+            {/* <Image
+              src="/about1.jpg"
+              alt="About us image"
+              width={600}
+              height={400}
+              className="object-cover md:w-[45%] "
+            /> */}
+            <img
               src="/about1.jpg"
               alt="About us image"
               width={600}
@@ -162,7 +188,14 @@ export default function Home() {
                 Find out More
               </Link>
             </div>
-            <Image
+            {/* <Image
+              src="/about2.jpg"
+              alt="About us image"
+              width={600}
+              height={400}
+              className="object-cover md:w-[45%] "
+            /> */}
+            <img
               src="/about2.jpg"
               alt="About us image"
               width={600}
@@ -171,7 +204,14 @@ export default function Home() {
             />
           </div>
           <div className="md:w-[80%] mx-auto flex flex-col md:flex-row gap-10 justify-evenly mb-22">
-            <Image
+            {/* <Image
+              src="/about3.jpg"
+              alt="About us image"
+              width={600}
+              height={400}
+              className="object-cover md:w-[45%] "
+            /> */}
+            <img
               src="/about3.jpg"
               alt="About us image"
               width={600}
@@ -225,12 +265,17 @@ export default function Home() {
             {/* NOTE: To replicate the exact look, you would use a dark image/graphic.
                   If you have a globe image named 'dark-globe.png' in your 'public' folder: */}
 
-            <Image
+            {/* <Image
               src="/road.png"
               alt="Intelligent Logistics Background"
               layout="fill"
               objectFit="cover"
               className="opacity-100 hover:opacity-100 transition duration-300" // Adjust opacity as needed
+            /> */}
+            <img
+              src="/road.png"
+              alt="Intelligent Logistics Background"
+              className="opacity-100 hover:opacity-100 transition duration-300 object-cover w-full h-full" // Adjust opacity as needed
             />
 
             {/* The following divs are a pure Tailwind/CSS placeholder to mimic the dark, glossy effect: */}
@@ -294,7 +339,13 @@ export default function Home() {
             ></div>
           </div>
           <div className="absolute inset-0 z-50 w-[70%] mx-auto md:flex gap-3 md:gap-10 h-fit md:h-1/3 bg-white text-black pr-3 hidden">
-            <Image
+            {/* <Image
+              src="/truck.jpg"
+              alt="Intelligent Logistics Background"
+              width={800}
+              height={600}
+            /> */}
+            <img
               src="/truck.jpg"
               alt="Intelligent Logistics Background"
               width={800}

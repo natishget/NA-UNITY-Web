@@ -17,7 +17,14 @@ const Footer = () => {
     <div className="w-full bg-black  ">
       <div className="w-[80%] mx-auto text-white py-20">
         <div className=" flex gap-5 items-center">
-          <Image
+          {/* <Image
+            src="/NA-Unity.png"
+            alt="NA UNITY LOGO"
+            width={50}
+            height={50}
+            className=""
+          /> */}
+          <img
             src="/NA-Unity.png"
             alt="NA UNITY LOGO"
             width={50}

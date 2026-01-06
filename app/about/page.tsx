@@ -8,12 +8,17 @@ export default function About() {
       <div className="relative min-h-screen overflow-y-auto  text-white">
         {/* === Fixed Background Image (stays still when scrolling) === */}
         <div className="fixed inset-0 -z-10">
-          <Image
+          {/* <Image
             src="/Addis-Ababa.png"
             alt="Main Background"
             fill
             className="object-cover "
             priority
+          /> */}
+          <img
+            src="/Addis-Ababa.png"
+            alt="Main Background"
+            className="object-cover w-full h-full"
           />
         </div>
 
@@ -21,12 +26,17 @@ export default function About() {
         <section className="relative h-[750px] md:h-[850px] w-full flex items-center justify-center ">
           {/* Hero background (scrolls with section) */}
           <div className="absolute inset-0 z-0">
-            <Image
+            {/* <Image
               src="/hero-about-us.jpg"
               alt="Hero Background"
               fill
               className="object-cover "
               priority
+            /> */}
+            <img
+              src="/hero-about-us.jpg"
+              alt="Hero Background"
+              className="object-cover w-full h-full"
             />
           </div>
 
@@ -92,7 +102,14 @@ export default function About() {
         {/* Our Values  */}
         <section className="w-full bg-white py-20">
           <div className="w-[80%] mx-auto flex flex-col md:flex-row justify-evenly gap-10 md:gap-0">
-            <Image
+            {/* <Image
+              src="/team-collaboration.jpg"
+              alt="About Us"
+              width={800}
+              height={600}
+              className="object-cover rounded-lg md:w-[40%]"
+            /> */}
+            <img
               src="/team-collaboration.jpg"
               alt="About Us"
               width={800}
@@ -177,7 +194,15 @@ export default function About() {
         <section className="w-full bg-gray-100 py-20">
           <div className="w-[80%] mx-auto flex flex-col justify-center text-black gap-10">
             <h1 className="text-5xl font-bold ">Why Choose Us?</h1>
-            <Image
+            {/* <Image
+              src="/NA-truck2.jpg"
+              alt="NA Truck"
+              width={1500}
+              height={1000}
+              className="rounded-lg w-full"
+            /> */}
+
+            <img
               src="/NA-truck2.jpg"
               alt="NA Truck"
               width={1500}
@@ -237,7 +262,13 @@ export default function About() {
             ></div>
           </div>
           <div className="absolute inset-0 z-0 w-[70%] mx-auto md:flex flex-row gap-10 md:h-1/3 h-fit bg-white text-black pr-3 hidden">
-            <Image
+            {/* <Image
+              src="/cargo-plane2.jpg"
+              alt="Intelligent Logistics Background"
+              width={800}
+              height={600}
+            /> */}
+            <img
               src="/cargo-plane2.jpg"
               alt="Intelligent Logistics Background"
               width={800}

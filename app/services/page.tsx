@@ -7,12 +7,17 @@ export default function Page() {
       <div className="relative min-h-screen overflow-y-auto  text-white">
         {/* === Fixed Background Image (stays still when scrolling) === */}
         <div className="fixed inset-0 -z-10">
-          <Image
+          {/* <Image
             src="/about3.jpg"
             alt="Main Background"
             fill
             className="object-cover "
             priority
+          /> */}
+          <img
+            src="/about3.jpg"
+            alt="Main Background"
+            className="object-cover w-full h-full"
           />
         </div>
 
@@ -60,7 +65,15 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <Image
+            {/* <Image
+              src="/sourcing-factory.jpg"
+              alt="Sourcing Factory"
+              width={800}
+              height={500}
+              className="md:w-[45%]"
+            /> */}
+
+            <img
               src="/sourcing-factory.jpg"
               alt="Sourcing Factory"
               width={800}
@@ -72,7 +85,15 @@ export default function Page() {
 
         <section className="relative w-full bg-black mb-92 text-white">
           <div className="w-[80%] flex flex-col md:flex-row gap-10 md:gap-0 justify-evenly items-center mx-auto py-20">
-            <Image
+            {/* <Image
+              src="/price-negotiation.jpg"
+              alt="Sourcing Factory"
+              width={800}
+              height={500}
+              className="md:w-[45%]"
+            /> */}
+
+            <img
               src="/price-negotiation.jpg"
               alt="Sourcing Factory"
               width={800}
@@ -139,7 +160,15 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <Image
+            {/* <Image
+              src="/quality-control.jpg"
+              alt="Sourcing Factory"
+              width={800}
+              height={500}
+              className="md:w-[45%]"
+            /> */}
+
+            <img
               src="/quality-control.jpg"
               alt="Sourcing Factory"
               width={800}
@@ -152,7 +181,15 @@ export default function Page() {
         {/* Warehousing & Consolidation */}
         <section className="relative w-full bg-black mb-92 text-white">
           <div className="w-[80%] flex flex-col md:flex-row gap-10 md:gap-0 justify-evenly items-center mx-auto py-20">
-            <Image
+            {/* <Image
+              src="/warehouse-storage.jpg"
+              alt="Sourcing Factory"
+              width={800}
+              height={500}
+              className="md:w-[45%]"
+            /> */}
+
+            <img
               src="/warehouse-storage.jpg"
               alt="Sourcing Factory"
               width={800}
@@ -219,7 +256,15 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <Image
+            {/* <Image
+              src="/logistics-tracking.jpg"
+              alt="Sourcing Factory"
+              width={800}
+              height={500}
+              className="md:w-[45%]"
+            /> */}
+
+            <img
               src="/logistics-tracking.jpg"
               alt="Sourcing Factory"
               width={800}
@@ -232,7 +277,15 @@ export default function Page() {
         {/* Payment & Transaction Support */}
         <section className="relative w-full bg-black mb-92 text-white">
           <div className="w-[80%] flex flex-col md:flex-row gap-10 md:gap-0 justify-evenly items-center mx-auto py-20">
-            <Image
+            {/* <Image
+              src="/payment-processing.jpg"
+              alt="Sourcing Factory"
+              width={800}
+              height={500}
+              className="md:w-[45%]"
+            /> */}
+
+            <img
               src="/payment-processing.jpg"
               alt="Sourcing Factory"
               width={800}
@@ -299,7 +352,15 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <Image
+            {/* <Image
+              src="/customs-clearance.jpg"
+              alt="Sourcing Factory"
+              width={800}
+              height={500}
+              className="md:w-[45%]"
+            /> */}
+
+            <img
               src="/customs-clearance.jpg"
               alt="Sourcing Factory"
               width={800}
@@ -336,7 +397,14 @@ export default function Page() {
             ></div>
           </div>
           <div className="absolute inset-0 z-0 w-[70%] mx-auto md:flex gap-10 h-fit bg-white text-black pr-3 hidden">
-            <Image
+            {/* <Image
+              src="/cargo-plane.jpg"
+              alt="Intelligent Logistics Background"
+              width={300}
+              height={600}
+            /> */}
+
+            <img
               src="/cargo-plane.jpg"
               alt="Intelligent Logistics Background"
               width={300}
